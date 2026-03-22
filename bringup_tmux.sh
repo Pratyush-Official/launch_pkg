@@ -25,7 +25,6 @@ tmux select-layout tiled
 # sleep 0.9
 # tmux send-keys -t 0 "ros2 run oakd_roi_detector detector_node" C-m
 # sleep 0.9
-
 tmux send-keys -t 1 "ros2 run dev_pi_communicate serial_bluepill" C-m
 sleep 0.9
 
