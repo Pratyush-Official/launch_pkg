@@ -21,27 +21,34 @@ tmux select-layout tiled
 # tmux send-keys -t 0 "echo '1' | sudo -S ros2 run dev_pi_communicate usb_init_node" C-m
 # sleep 0.9
 
-# tmux send-keys -t 1 "ros2 run ak_pkg ak_60_up" C-m
-# sleep 0.9
 # tmux send-keys -t 0 "ros2 run oakd_roi_detector detector_node" C-m
 # sleep 0.9
-tmux send-keys -t 1 "ros2 run dev_pi_communicate serial_bluepill" C-m
+tmux send-keys -t 1 "ros2 run serial_bridge_2026 serial_bluepill" C-m
 sleep 0.9
 
-tmux send-keys -t 2 "ros2 run dev_pi_communicate serial_nucleo" C-m
+tmux send-keys -t 2 "ros2 run serial_bridge_2026 serial_nucleo" C-m
 sleep 0.9
 
 # tmux send-keys -t 4 "ros2 run server odom_server_node" C-m
 # sleep 0.9
 
-tmux send-keys -t 3 "ros2 run server sick_server_node" C-m
-sleep 0.9
+# tmux send-keys -t 3 "ros2 run server sick_server_node" C-m
+# sleep 0.9
+
+# tmux send-keys -t 3 "ros2 run ak_pkg ak_60_up" C-m
+# sleep 0.9
+
+# tmux send-keys -t 3 "ros2 run server sick_tuning" C-m
+# sleep 0.9
+
+# tmux send-keys -t 3 "ros2 run server sick_tuning" C-m
+# sleep 0.9
 
 
 # tmux send-keys -t 4 "ros2 run server yaw_server_node" C-m 
 # sleep 0.9
 
-tmux send-keys -t 5 "ros2 run martial_tree tree_ticker" C-m 
+tmux send-keys -t 3 "ros2 run martial_tree tree_ticker" C-m 
 sleep 0.9
 
 
